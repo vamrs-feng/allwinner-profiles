@@ -1,0 +1,27 @@
+Source: allwinner-profiles
+Maintainer: "Radxa Computer Co., Ltd" <dev@radxa.com>
+Section: admin
+Priority: standard
+Standards-Version: 4.6.0
+Build-Depends: debhelper (>=12~),
+               devscripts,
+               lintian,
+               dh-exec,
+               pandoc,
+
+Package: task-a527-x11
+Architecture: all
+Priority: optional
+Depends: xserver-xorg-mesa-g57-1.21.1-2.deb,
+         ${misc:Depends},
+Description: Metapackage for A527 X11 support
+ This package provides Allwinner A527 X11 support.
+
+Package: task-a527
+Architecture: all
+Priority: optional
+Depends: task-a527-x11,
+         ${misc:Depends},
+Description: Metapackage for common A527 vendor packages
+ This package provides prebuilt packages from Allwinner that
+ provides a more optimized user experience.

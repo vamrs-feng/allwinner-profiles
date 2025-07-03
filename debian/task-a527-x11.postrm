@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -e
+
+#DEBHELPER#
+
+case $1 in
+remove)
+	# workaround command-with-path-in-maintainer-script for /usr/bin
+	conflicts="
+/usr/lib/dri/sunxi-drm_dri.so
+/usr/lib/xorg/modules/extensions/libglx.so
+/usr/lib/xorg/modules/drivers/modesetting_drv.so /usr/bin/Xorg
+/usr/lib/aarch64-linux-gnu/libxcvt.so.0
+/usr/lib/aarch64-linux-gnu/libxcvt.so.0.1.1
+/usr/lib/aarch64-linux-gnu/libxcvt.so
+"
+	for i in $conflicts; do
+		dpkg-divert --package xserver-xorg-mesa-g57-1.21.1-2.deb --rename --remove "$i"
+	done
+	;;
+esac
+
+exit 0
