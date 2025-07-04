@@ -9,6 +9,15 @@ Build-Depends: debhelper (>=12~),
                dh-exec,
                pandoc,
 
+Package: task-a527-vpu
+Architecture: all
+Priority: optional
+Depends: libcedarc-dev,
+         libgstreamer-openmax-allwinner,
+         ${misc:Depends},
+Description: Metapackage for A527 X11 support
+ This package provides Allwinner A527 VPU support.
+
 Package: task-a527-x11
 Architecture: all
 Priority: optional
@@ -21,6 +30,7 @@ Package: task-a527
 Architecture: all
 Priority: optional
 Depends: task-a527-x11,
+         task-a527-vpu,
          ${misc:Depends},
 Description: Metapackage for common A527 vendor packages
  This package provides prebuilt packages from Allwinner that
