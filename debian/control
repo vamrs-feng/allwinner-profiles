@@ -41,6 +41,7 @@ Priority: optional
 Depends: task-a527-chromium,
          task-a527-x11,
          task-a527-vpu,
+         radxa-system-config-allwinner,
          ${misc:Depends},
 Description: Metapackage for common A527 vendor packages
  This package provides prebuilt packages from Allwinner that
