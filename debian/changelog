@@ -1,5 +1,12 @@
-allwinner-profiles (0.1.0-1) UNRELEASED; urgency=medium
+allwinner-profiles (0.1.0-1) unstable; urgency=medium
 
+  [ "Radxa Computer Co., Ltd" ]
   * Add initial Debian packaging support
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 01 Jan 1970 08:00:00 +0800
+  [ ZHANG Yuntian ]
+  * feat: add task-a527-x11
+  * feat: add task-a527-vpu
+  * feat: add task-a527-chromium
+  * feat: add radxa-system-config-allwinner dependency
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 15 Jul 2025 02:57:11 +0000
