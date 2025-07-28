@@ -9,14 +9,14 @@ Build-Depends: debhelper (>=12~),
                dh-exec,
                pandoc,
 
-Package: task-a527-chromium
+Package: task-allwinner-chromium
 Architecture: all
 Priority: optional
 Depends: chromium-browser-sunxi,
          ${misc:Depends},
 Provides: chromium,
-Description: Metapackage for A527 X11 support
- This package provides Allwinner A527 X11 support.
+Description: Metapackage for Allwinner Chromium support
+ This package provides Allwinner Chromium support.
 
 Package: task-a527-vpu
 Architecture: all
@@ -24,7 +24,7 @@ Priority: optional
 Depends: libcedarc-dev,
          libgstreamer-openmax-allwinner,
          ${misc:Depends},
-Description: Metapackage for A527 X11 support
+Description: Metapackage for A527 VPU support
  This package provides Allwinner A527 VPU support.
 
 Package: task-a527-x11
@@ -38,11 +38,40 @@ Description: Metapackage for A527 X11 support
 Package: task-a527
 Architecture: all
 Priority: optional
-Depends: task-a527-chromium,
+Depends: task-allwinner-chromium,
          task-a527-x11,
          task-a527-vpu,
          radxa-system-config-allwinner,
          ${misc:Depends},
 Description: Metapackage for common A527 vendor packages
+ This package provides prebuilt packages from Allwinner that
+ provides a more optimized user experience.
+
+Package: task-a733-vpu
+Architecture: all
+Priority: optional
+Depends: libcedarc-dev-2.0.0-arm64.deb,
+         libgstreamer-openmax-allwinner,
+         ${misc:Depends},
+Description: Metapackage for A733 X11 support
+ This package provides Allwinner A733 VPU support.
+
+Package: task-a733-x11
+Architecture: all
+Priority: optional
+Depends: xserver-xorg-img-bxm-1.21.1-2.deb,
+         ${misc:Depends},
+Description: Metapackage for A733 X11 support
+ This package provides Allwinner A733 X11 support.
+
+Package: task-a733
+Architecture: all
+Priority: optional
+Depends: task-allwinner-chromium,
+         task-a733-x11,
+         task-a733-vpu,
+         radxa-system-config-allwinner,
+         ${misc:Depends},
+Description: Metapackage for common A733 vendor packages
  This package provides prebuilt packages from Allwinner that
  provides a more optimized user experience.
