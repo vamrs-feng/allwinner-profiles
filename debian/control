@@ -60,6 +60,7 @@ Package: task-a733-x11
 Architecture: all
 Priority: optional
 Depends: xserver-xorg-img-bxm-1.21.1-2.deb,
+         radxa-touchscreen-utils,
          ${misc:Depends},
 Description: Metapackage for A733 X11 support
  This package provides Allwinner A733 X11 support.
