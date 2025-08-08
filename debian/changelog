@@ -1,3 +1,16 @@
+allwinner-profiles (0.2.1) unstable; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * feat: add divert for task-a733-x11
+
+  [ Jiali Chen ]
+  * feat: task-a733-x11: add radxa-touchscreen-utils to Depends
+
+  [ dependabot[bot] ]
+  * build(deps): bump actions/download-artifact from 4 to 5
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 08 Aug 2025 11:33:53 +0000
+
 allwinner-profiles (0.2.0) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
