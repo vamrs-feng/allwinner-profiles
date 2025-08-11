@@ -70,9 +70,9 @@ Architecture: all
 Priority: optional
 Depends: task-allwinner-chromium,
          task-a733-x11,
-         task-a733-vpu,
          radxa-system-config-allwinner,
          ${misc:Depends},
+Recommends: task-a733-vpu
 Description: Metapackage for common A733 vendor packages
  This package provides prebuilt packages from Allwinner that
  provides a more optimized user experience.
