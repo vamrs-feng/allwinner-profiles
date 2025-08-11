@@ -1,0 +1,3 @@
+# We need task-a733-x11 to do some work to prioritize loading the so provided by xserver-xorg-img-bxm
+task-a733-x11: package-modifies-ld.so-search-path
+task-a733-x11: package-has-unnecessary-activation-of-ldconfig-trigger
