@@ -71,6 +71,7 @@ Priority: optional
 Depends: task-allwinner-chromium,
          task-a733-x11,
          radxa-system-config-allwinner,
+         img-bxm-dkms,
          ${misc:Depends},
 Recommends: task-a733-vpu
 Description: Metapackage for common A733 vendor packages
