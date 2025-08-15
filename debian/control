@@ -18,6 +18,15 @@ Provides: chromium,
 Description: Metapackage for Allwinner Chromium support
  This package provides Allwinner Chromium support.
 
+Package: task-allwinner-xorg
+Architecture: all
+Priority: optional
+Depends: radxa-touchscreen-utils,
+         radxa-sddm-theme,
+         ${misc:Depends},
+Description: Metapackage for Allwinner common X.Org support
+ This package provides Allwinner common X.Org support.
+
 Package: task-a527-vpu
 Architecture: all
 Priority: optional
@@ -27,21 +36,20 @@ Depends: libcedarc-dev,
 Description: Metapackage for A527 VPU support
  This package provides Allwinner A527 VPU support.
 
-Package: task-a527-x11
+Package: task-a527-xorg
 Architecture: all
 Priority: optional
 Depends: xserver-xorg-mesa-g57-1.21.1-2.deb,
-         radxa-touchscreen-utils,
-         radxa-sddm-theme,
+         task-allwinner-xorg,
          ${misc:Depends},
-Description: Metapackage for A527 X11 support
- This package provides Allwinner A527 X11 support.
+Description: Metapackage for A527 X.Org support
+ This package provides Allwinner A527 X.Org support.
 
 Package: task-a527
 Architecture: all
 Priority: optional
 Depends: task-allwinner-chromium,
-         task-a527-x11,
+         task-a527-xorg,
          task-a527-vpu,
          radxa-system-config-allwinner,
          ${misc:Depends},
@@ -55,24 +63,23 @@ Priority: optional
 Depends: libcedarc-dev-2.0.0-arm64.deb,
          libgstreamer-openmax-allwinner,
          ${misc:Depends},
-Description: Metapackage for A733 X11 support
+Description: Metapackage for A733 X.Org support
  This package provides Allwinner A733 VPU support.
 
-Package: task-a733-x11
+Package: task-a733-xorg
 Architecture: all
 Priority: optional
 Depends: xserver-xorg-img-bxm-1.21.1-2.deb,
-         radxa-touchscreen-utils,
-         radxa-sddm-theme,
+         task-allwinner-xorg,
          ${misc:Depends},
-Description: Metapackage for A733 X11 support
- This package provides Allwinner A733 X11 support.
+Description: Metapackage for A733 X.Org support
+ This package provides Allwinner A733 X.Org support.
 
 Package: task-a733
 Architecture: all
 Priority: optional
 Depends: task-allwinner-chromium,
-         task-a733-x11,
+         task-a733-xorg,
          radxa-system-config-allwinner,
          img-bxm-dkms,
          ${misc:Depends},
