@@ -70,6 +70,7 @@ Architecture: all
 Priority: optional
 Depends: task-allwinner-chromium,
          task-a733-x11,
+         radxa-sddm-theme,
          radxa-system-config-allwinner,
          img-bxm-dkms,
          ${misc:Depends},
