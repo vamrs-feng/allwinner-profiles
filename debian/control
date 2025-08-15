@@ -31,6 +31,7 @@ Package: task-a527-x11
 Architecture: all
 Priority: optional
 Depends: xserver-xorg-mesa-g57-1.21.1-2.deb,
+         radxa-touchscreen-utils,
          radxa-sddm-theme,
          ${misc:Depends},
 Description: Metapackage for A527 X11 support
