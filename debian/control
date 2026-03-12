@@ -46,6 +46,15 @@ Depends: radxa-touchscreen-utils,
 Description: Metapackage for Allwinner common X.Org support
  This package provides Allwinner common X.Org support.
 
+Package: task-a527-camera
+Architecture: all
+Priority: optional
+Depends: libawispapi-isp-601-arm64,
+         ${misc:Depends},
+Description: Metapackages for A527 camera packages
+ This package provides prebuilt packages from Allwinner that
+ provides Allwinner A527 camera support.
+
 Package: task-a527-vpu
 Architecture: all
 Priority: optional
@@ -68,6 +77,7 @@ Package: task-a527
 Architecture: all
 Priority: optional
 Depends: task-allwinner,
+         task-a527-camera,
          task-a527-xorg,
          task-a527-vpu,
          ${misc:Depends},
