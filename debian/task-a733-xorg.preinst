@@ -8,6 +8,7 @@ install | upgrade)
 	conflicts="
 /usr/lib/xorg/modules/libglamoregl.so
 /usr/lib/xorg/modules/drivers/modesetting_drv.so /usr/bin/Xorg
+/usr/share/wayland-sessions/plasma.desktop
 "
 	for i in $conflicts; do
 		dpkg-divert --package xserver-xorg-img-bxm-1.21.1-2.deb --divert "$i.bak" --rename "$i"
