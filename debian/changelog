@@ -1,3 +1,11 @@
+allwinner-profiles (0.2.9) unstable; urgency=medium
+
+  [ Feng Zhang ]
+  * feat: add depends for task-a733-xorg metapackage
+  * fix: remove wayland session
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 12 Jun 2026 06:31:44 +0000
+
 allwinner-profiles (0.2.8) unstable; urgency=medium
 
   [ Feng Zhang ]
