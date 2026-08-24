@@ -1,1 +1,1 @@
-task-a733-xorg/etc/ld.so.conf.d/00_xserver-xorg-img-bxm.conf etc/ld.so.conf.d/
+task-a733-xorg/* /
