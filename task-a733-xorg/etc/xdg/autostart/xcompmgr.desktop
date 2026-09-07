@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=xcompmgr
+TryExec=/usr/bin/xcompmgr
+Exec=/usr/bin/xcompmgr -n
+OnlyShowIn=KDE;
+StartupNotify=false
+Terminal=false
+NoDisplay=true

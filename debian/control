@@ -108,9 +108,11 @@ Architecture: all
 Priority: optional
 Depends: libxcb-dri2-0,
          libssl1.1,
+         xcompmgr,
          xserver-xorg-img-bxm-1.21.1-2.deb,
          task-allwinner-xorg,
          ${misc:Depends},
+Conflicts: picom,
 Description: Metapackage for A733 X.Org support
  This package provides Allwinner A733 X.Org support.
 
