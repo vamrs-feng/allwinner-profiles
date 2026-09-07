@@ -108,6 +108,7 @@ Architecture: all
 Priority: optional
 Depends: libxcb-dri2-0,
          libssl1.1,
+         picom,
          xserver-xorg-img-bxm-1.21.1-2.deb,
          task-allwinner-xorg,
          ${misc:Depends},
